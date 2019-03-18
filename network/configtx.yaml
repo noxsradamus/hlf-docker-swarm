@@ -2,8 +2,6 @@
 Profiles:
 
     OrdererGenesis:
-        Capabilities:
-            <<: *ChannelCapabilities
         Orderer:
             <<: *OrdererDefaults
             Organizations:
@@ -80,9 +78,6 @@ Application: &ApplicationDefaults
     Organizations:
 
 Capabilities:
-    Global: &ChannelCapabilities
-        V1_4: true
-
     Orderer: &OrdererCapabilities
         V1_4: true
 
